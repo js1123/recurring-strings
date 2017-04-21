@@ -35,4 +35,8 @@ var findRecurringStrings = function (bigstring) {
     }
     length--;
   }
+  
+  var resultDiv = document.createElement('div');
+  resultDiv.textContent = JSON.stringify(results);
+  document.body.appendChild(resultDiv);
 }
